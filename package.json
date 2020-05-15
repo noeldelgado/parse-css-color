@@ -1,0 +1,13 @@
+{
+  "name": "parse-css-color-string",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "parse",
+    "css",
+    "color",
+    "string"
+  ],
+  "author": "Noel Delgado <pixelia.me@gmail.com> (http://pixelia.me)",
+  "license": "MIT"
+}
