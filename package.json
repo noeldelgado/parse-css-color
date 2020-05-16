@@ -1,6 +1,6 @@
 {
   "name": "parse-css-color",
-  "version": "0.0.1-beta.0",
+  "version": "0.0.1-beta.1",
   "description": "parse a css color string",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
