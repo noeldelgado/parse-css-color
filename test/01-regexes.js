@@ -1,6 +1,15 @@
 const assert = require('assert').strict;
 
-const { hexRe, hslRe, hsl4Re, rgbaRe, rgbpRe, rgb4Re, rgb4pRe } = require('../src/regexes');
+const {
+  hexRe,
+  hsl3Re,
+  hsl4Re,
+  rgb3NumberRe,
+  rgb3PercentageRe,
+  rgb4NumberRe,
+  rgb4PercentageRe,
+  transparentRe
+} = require('../src/regexes');
 
 const { ok, equal } = assert;
 
@@ -43,8 +52,8 @@ describe('regexes', () => {
     ]);
   });
 
-  describe('regexes/hslRe (level 3)', () => {
-    const r = hslRe;
+  describe('regexes/hsl3Re (level 3)', () => {
+    const r = hsl3Re;
     okTest(r, [
       'hsl(240, 100%, 50%)',
       'hsl(240 , 100%, 50%)',
@@ -109,8 +118,8 @@ describe('regexes', () => {
     ]);
   });
 
-  describe('regexes/rgbRe digits (level 3)', () => {
-    const r = rgbaRe;
+  describe('regexes/rgb3NumberRe digits (level 3)', () => {
+    const r = rgb3NumberRe;
     okTest(r, [
       'rgb(0, 0, 255)',
       'rgba(0, 0, 255, 1)',
@@ -125,8 +134,8 @@ describe('regexes', () => {
     ]);
   });
 
-  describe('regexes/rgbpRegex percentage (level 3)', () => {
-    const r = rgbpRe;
+  describe('regexes/rgb3PercentageRe percentage (level 3)', () => {
+    const r = rgb3PercentageRe;
     okTest(r, [
       'rgb(0%, 0%, 100%)',
       'rgba(0%, 0%, 100%, 100%)',
@@ -135,8 +144,8 @@ describe('regexes', () => {
     ]);
   });
 
-  describe('regexes/rgb4Re digits (level 4)', () => {
-    const r = rgb4Re;
+  describe('regexes/rgb4NumberRe digits (level 4)', () => {
+    const r = rgb4NumberRe;
     okTest(r, [
       'rgb(0 0 255)',
       'rgb(0 0 255 / 100%)',
@@ -148,8 +157,8 @@ describe('regexes', () => {
     ]);
   });
 
-  describe('regexes/rgb4pRe percentage (level 4)', () => {
-    const r = rgb4pRe;
+  describe('regexes/rgb4PercentageRe percentage (level 4)', () => {
+    const r = rgb4PercentageRe;
     okTest(r, [
       'rgb(0% 0% 100% / 100%)',
       'rgb(0% 0% 100% / 50%)',
@@ -157,5 +166,11 @@ describe('regexes', () => {
       'rgb(0% 0% 100% / 0.5)',
       'rgb(0% 0% 100% / 0)'
     ]);
+  });
+
+  describe('regexs/transparentRe', () => {
+    const r = transparentRe;
+    okTest(r, ['transparent', 'tRansParent']);
+    failTest(r, [' transparent', 'transParent ']);
   });
 });
