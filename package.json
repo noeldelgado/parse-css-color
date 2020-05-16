@@ -1,7 +1,7 @@
 {
-  "name": "parse-css-color-string",
-  "version": "1.0.0",
-  "description": "",
+  "name": "parse-css-color",
+  "version": "0.0.1-beta.0",
+  "description": "parse a css color string",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
