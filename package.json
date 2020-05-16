@@ -2,6 +2,9 @@
   "name": "parse-css-color",
   "version": "0.0.1-beta.0",
   "description": "parse a css color string",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "browser": "lib/index.umd.js",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
