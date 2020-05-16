@@ -11,6 +11,7 @@
   "author": "Noel Delgado <pixelia.me@gmail.com> (http://pixelia.me)",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^7.0.0"
+    "eslint": "^7.0.0",
+    "eslint-config-rollup": "^0.1.0"
   }
 }
