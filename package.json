@@ -2,6 +2,11 @@
   "name": "parse-css-color-string",
   "version": "1.0.0",
   "description": "",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "mocha --require esm"
+  },
   "keywords": [
     "parse",
     "css",
