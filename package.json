@@ -11,6 +11,7 @@
   "author": "Noel Delgado <pixelia.me@gmail.com> (http://pixelia.me)",
   "license": "MIT",
   "dependencies": {
+    "color-name": "^1.1.4",
     "hex-rgb": "^4.1.0"
   },
   "devDependencies": {
