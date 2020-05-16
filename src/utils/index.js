@@ -34,7 +34,7 @@ export function getHSL([, h, s, l, a = 1]) {
     hh = parseFloat(hh);
   }
   return {
-    model: 'hsl',
+    type: 'hsl',
     values: [hh, parsePercentage(s), parsePercentage(l)],
     alpha: parseAlpha(a === null ? 1 : a)
   };
@@ -42,7 +42,7 @@ export function getHSL([, h, s, l, a = 1]) {
 
 export function getRGB([, r, g, b, a = 1]) {
   return {
-    model: 'rgb',
+    type: 'rgb',
     values: [r, g, b].map(parseRGB),
     alpha: parseAlpha(a === null ? 1 : a)
   };
