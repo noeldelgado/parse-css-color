@@ -9,5 +9,8 @@
     "string"
   ],
   "author": "Noel Delgado <pixelia.me@gmail.com> (http://pixelia.me)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.0.0"
+  }
 }
