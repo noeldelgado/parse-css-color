@@ -6,9 +6,17 @@
     "parse",
     "css",
     "color",
-    "string"
+    "string",
+    "colour",
+    "rgb",
+    "rgba",
+    "hsl",
+    "hsla",
+    "hex",
+    "hexa",
+    "alpha"
   ],
-  "author": "Noel Delgado <pixelia.me@gmail.com> (http://pixelia.me)",
+  "author": "Noel Delgado <pixelia.me@gmail.com> (https://pixelia.me/)",
   "license": "MIT",
   "dependencies": {
     "color-name": "^1.1.4",
