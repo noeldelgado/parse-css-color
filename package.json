@@ -5,6 +5,9 @@
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
   "browser": "lib/index.umd.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
