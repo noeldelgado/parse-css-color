@@ -22,6 +22,8 @@ const parseFail = (colorString) => {
 
 describe('parse(<transparent>)', () => {
   parseOk('transparent', 'rgb', [0, 0, 0], 0);
+  parseFail(' transparent', 'rgb', [0, 0, 0], 0);
+  parseFail('transparent ', 'rgb', [0, 0, 0], 0);
   describe('non-case sensitive TrANSParent', () => parseOk('TrANSParent', 'rgb', [0, 0, 0], 0));
 });
 
@@ -34,6 +36,7 @@ describe('parse(<hex>)', () => {
   parseOk('#0000FF', 'rgb', [0, 0, 255], 1);
   parseOk('#0000FFFF', 'rgb', [0, 0, 255], 1);
   parseOk('#0000FF80', 'rgb', [0, 0, 255], 0.5019607843137255);
+  parseFail('#00g');
 });
 
 describe('parse(<hsl>)', () => {
@@ -51,7 +54,7 @@ describe('parse(<hsl>)', () => {
     describe('deg', () => parseOk('hsl(270deg 60% 70%)', model, [270, 60, 70], 1));
     describe('rad', () => parseOk('hsl(4.71239rad 60% 70%)', model, [270, 60, 70], 1));
     describe('turn', () => parseOk('hsl(.75turn 60% 70%)', model, [270, 60, 70], 1));
-    describe('deg', () => parseOk('hsl(270deg 60% 70% / 1)', model, [270, 60, 70], 1));
+    describe('deg', () => parseOk('hsl(270deg 60% 70% / 0.25)', model, [270, 60, 70], 0.25));
     describe('rad', () => parseOk('hsl(4.71239rad 60% 70% / 0.5)', model, [270, 60, 70], 0.5));
     describe('turn', () => parseOk('hsl(.75turn 60% 70% / 50%)', model, [270, 60, 70], 0.5));
     // s|l without percentage
@@ -91,12 +94,14 @@ describe('parse(<rgb>)', () => {
     parseOk('rgba(300 256 -100 / -20)', model, [255, 255, 0], 0);
     parseOk('rgba(300   256   -100    /    -20)', model, [255, 255, 0], 0);
     parseOk('rgb(0 0 0 / 0)', model, [0, 0, 0], 0);
-    parseOk('rgb( 0 0 0 / 100%)', model, [0, 0, 0], 1);
-    parseOk('rgb(0 0 0 / 200%)', model, [0, 0, 0], 1);
+    parseOk('rgb( 0 0 0 / 100)', model, [0, 0, 0], 1);
+    parseOk('rgb(0 0 0 / 20%)', model, [0, 0, 0], 0.2);
     parseOk('rgb(0 0 0 / -200%)', model, [0, 0, 0], 0);
     parseOk('rgb(300% 0% 0% / 1)', model, [255, 0, 0], 1);
     parseOk('rgb(100% 0% 0% / 200%)', model, [255, 0, 0], 1);
     parseOk('rgba(255, 0, 153.6, 1)', model, [255, 0, 154], 1);
+    parseOk('rgb(0% 42.35% 33.33%)', model, [0, 108, 85], 1);
+    parseOk('rgb(41.2% 69.88% 96.64%)', model, [105, 178, 246], 1);
     // parseOk('rgba(1e2, .5e1, .5e0, +.25e2%)', model, [100, 5, 0], 0.25);
     // mixed % with #
     parseFail('rgb(100% 0 0 / 0)');
