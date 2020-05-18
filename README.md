@@ -1,6 +1,10 @@
 # parse-css-color
+[![npm-image](https://img.shields.io/npm/v/parse-css-color.svg)](https://www.npmjs.com/package/parse-css-color)
+![license-image](https://img.shields.io/npm/l/parse-css-color.svg)
+[![Known Vulnerabilities](https://snyk.io/test/npm/parse-css-color/badge.svg)](https://snyk.io/test/npm/parse-css-color)
+![](https://img.badgesize.io/noeldelgado/parse-css-color/master/lib/index.esm.js.svg?compression=gzip)
 
-Parse a CSS color string. Usefull for user input validation.
+Parse a CSS color string.
 
 ### Supports
 * \<color value\>
@@ -18,9 +22,6 @@ Parse a CSS color string. Usefull for user input validation.
 * inherit
 
 ## Installation
-
-**NPM**
-
 ```sh
 npm i parse-css-color
 ```
