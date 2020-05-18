@@ -9,9 +9,10 @@
     "lib"
   ],
   "scripts": {
-    "build": "rollup -c",
     "dev": "rollup -c -w",
-    "test": "mocha --require esm"
+    "test": "mocha --require esm",
+    "build": "rollup -c",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "parse",
