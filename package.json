@@ -27,6 +27,10 @@
     "hexa",
     "alpha"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noeldelgado/parse-css-color.git"
+  },
   "author": "Noel Delgado <pixelia.me@gmail.com> (https://pixelia.me/)",
   "license": "MIT",
   "dependencies": {
