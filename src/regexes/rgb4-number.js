@@ -1,11 +1,11 @@
-import { digit, digitOrPercentage } from './utils';
+import { number, numberOrPercentage } from './utils';
 
 const pattern = `^
   rgba?\\(
-    \\s*${digit}
-    \\s+${digit}
-    \\s+${digit}
-    \\s*(?:\\s*\\/\\s*${digitOrPercentage}\\s*)?
+    \\s*${number}
+    \\s+${number}
+    \\s+${number}
+    \\s*(?:\\s*\\/\\s*${numberOrPercentage}\\s*)?
   \\)
 $
 `.replace(/\n|\s/g, '');

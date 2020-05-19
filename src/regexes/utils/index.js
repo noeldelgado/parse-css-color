@@ -1,3 +1,5 @@
-export const digit = '(-?\\d*(?:\\.\\d+)?)';
-export const percentage = '(-?\\d*(?:\\.\\d+)?%)';
-export const digitOrPercentage = '(-?\\d*(?:\\.\\d+)?%?)';
+const float = '-?\\d*(?:\\.\\d+)';
+
+export const number = `(${float}?)`;
+export const percentage = `(${float}?%)`;
+export const numberOrPercentage = `(${float}?%?)`;
