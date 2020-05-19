@@ -37,6 +37,12 @@ Or as a `<script>` tag from a CDN as `parseCssColor`:
 <script src="https://unpkg.com/parse-css-color"></script>
 ```
 
+**jsDelivr CDN**
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/parse-css-color"></script>
+```
+
 ## Usage
 ```js
 import parse from 'parse-css-color'
