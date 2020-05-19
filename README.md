@@ -2,7 +2,7 @@
 [![npm-image](https://img.shields.io/npm/v/parse-css-color.svg)](https://www.npmjs.com/package/parse-css-color)
 ![license-image](https://img.shields.io/npm/l/parse-css-color.svg)
 [![Known Vulnerabilities](https://snyk.io/test/npm/parse-css-color/badge.svg)](https://snyk.io/test/npm/parse-css-color)
-![](https://img.badgesize.io/noeldelgado/parse-css-color/master/lib/index.esm.js.svg?compression=gzip)
+![](https://img.badgesize.io/noeldelgado/parse-css-color/master/src/index.js.svg?compression=gzip)
 
 Parse a CSS color string.
 
@@ -68,6 +68,10 @@ npm install   # install dependencies
 npm test      # run the tests (append `-- -w`) to watch
 npm run dev   # watch for changes and rebuild
 ```
+
+## Related
+- [mix-css-color](https://github.com/noeldelgado/mix-css-color) - Mix two CSS colors together in variable proportion. Opacity is included in the calculations.
+- [values.js](https://github.com/noeldelgado/values.js) - Get the tints and shades of a CSS color.
 
 ## License
 MIT © [Noel Delgado](http://pixelia.me/)
