@@ -3,7 +3,17 @@
 ## [Unreleased]
 
 ## [0.1.1] - [#1](../../pull/1) - 2020-05-19
-- remove `dist` folder
+### Added
+- add related projects 9d229e6 c81fe20
+- add CHANGELOG 29d92b4
+- add currentColor and inherit fail tests fd85e7b
+
+### Changed
+- move distributed files to dist folder instead of lib (for npm) 1af0a5d
+- rename digit/number 5f75605
+
+### Removed
+- remove lib files from source code d6591d3
 
 ## [0.1.0] - 2020-05-18
 ### Added
