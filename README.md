@@ -2,7 +2,7 @@
 [![npm-image](https://img.shields.io/npm/v/parse-css-color.svg)](https://www.npmjs.com/package/parse-css-color)
 ![license-image](https://img.shields.io/npm/l/parse-css-color.svg)
 [![Known Vulnerabilities](https://snyk.io/test/npm/parse-css-color/badge.svg)](https://snyk.io/test/npm/parse-css-color)
-![](https://img.badgesize.io/noeldelgado/parse-css-color/master/lib/index.esm.js.svg?compression=gzip)
+![](https://img.badgesize.io/noeldelgado/parse-css-color/master/src/index.js.svg?compression=gzip)
 
 Parse a CSS color string.
 
