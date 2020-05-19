@@ -71,6 +71,7 @@ npm run dev   # watch for changes and rebuild
 
 ## Related
 - [mix-css-color](https://github.com/noeldelgado/mix-css-color) - Mix two CSS colors together in variable proportion. Opacity is included in the calculations.
+- [values.js](https://github.com/noeldelgado/values.js) - Get the tints and shades of a CSS color.
 
 ## License
 MIT © [Noel Delgado](http://pixelia.me/)
