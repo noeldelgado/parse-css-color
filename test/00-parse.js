@@ -20,11 +20,13 @@ const parseFail = (colorString) => {
   });
 };
 
-describe('parse(<transparent>)', () => {
+describe('parse(<misc>)', () => {
   parseOk('transparent', 'rgb', [0, 0, 0], 0);
-  parseFail(' transparent', 'rgb', [0, 0, 0], 0);
-  parseFail('transparent ', 'rgb', [0, 0, 0], 0);
+  parseFail(' transparent');
+  parseFail('transparent ');
   describe('non-case sensitive TrANSParent', () => parseOk('TrANSParent', 'rgb', [0, 0, 0], 0));
+  parseFail('currentColor');
+  parseFail('inherit');
 });
 
 describe('parse(<hex>)', () => {
@@ -126,7 +128,7 @@ describe('parse(<rgb>)', () => {
   });
 });
 
-describe('parse(<named-color>)', () => {
+describe('parse(<keywords>)', () => {
   const type = 'rgb';
   parseOk('red', type, [255, 0, 0], 1);
   parseOk('aqua', type, [0, 255, 255], 1);
