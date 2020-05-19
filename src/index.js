@@ -18,7 +18,7 @@ import {
 } from './regexes';
 import { getHEX, getRGB, getHSL } from './utils';
 
-const parseCSSColor = (str) => {
+const parseCSSColor = (str = '') => {
   const hex = hexRe.exec(str);
   if (hex) return getHEX(hex[0]);
 
