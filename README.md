@@ -69,5 +69,8 @@ npm test      # run the tests (append `-- -w`) to watch
 npm run dev   # watch for changes and rebuild
 ```
 
+## Related
+- [mix-css-color](https://github.com/noeldelgado/mix-css-color) - Mix two CSS colors together in variable proportion. Opacity is included in the calculations.
+
 ## License
 MIT © [Noel Delgado](http://pixelia.me/)
