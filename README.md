@@ -22,8 +22,19 @@ Parse a CSS color string.
 * inherit
 
 ## Installation
+
+**NPM**
+
 ```sh
 npm i parse-css-color
+```
+
+Or as a `<script>` tag from a CDN as `parseCssColor`:
+
+**Unpkg CDN**
+
+```html
+<script src="https://unpkg.com/parse-css-color"></script>
 ```
 
 ## Usage
