@@ -19,7 +19,7 @@ import {
 import { getHEX, getRGB, getHSL } from './utils';
 
 const parseCSSColor = (str = '') => {
-  if (str === null) return null;
+  if (typeof str !== 'string') return null;
 
   const hex = hexRe.exec(str);
   if (hex) return getHEX(hex[0]);
