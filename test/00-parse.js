@@ -29,6 +29,10 @@ describe('parse(<misc>)', () => {
   parseFail('');
   parseFail(undefined); // eslint-disable-line
   parseFail(null);
+  parseFail(false);
+  parseFail(true);
+  parseFail(0);
+  parseFail(1);
   parseFail('currentColor');
   parseFail('inherit');
 });
