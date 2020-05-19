@@ -25,6 +25,14 @@ describe('parse(<misc>)', () => {
   parseFail(' transparent');
   parseFail('transparent ');
   describe('non-case sensitive TrANSParent', () => parseOk('TrANSParent', 'rgb', [0, 0, 0], 0));
+  parseFail();
+  parseFail('');
+  parseFail(undefined); // eslint-disable-line
+  parseFail(null);
+  parseFail(false);
+  parseFail(true);
+  parseFail(0);
+  parseFail(1);
   parseFail('currentColor');
   parseFail('inherit');
 });
