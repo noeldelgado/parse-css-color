@@ -47,7 +47,7 @@
     "eslint": "^7.0.0",
     "eslint-config-rollup": "^0.1.0",
     "esm": "^3.2.25",
-    "mocha": "^7.1.2",
+    "mocha": "^8.4.0",
     "rollup": "^2.8.2",
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-terser": "^5.3.0"
