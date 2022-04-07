@@ -2,9 +2,16 @@
 
 ## [Unreleased]
 
+## [0.2.1] - [#16](https://github.com/noeldelgado/parse-css-color/pull/16) - 2022-04-07
+### Fixed
+- index.d.ts [#15](https://github.com/noeldelgado/parse-css-color/pull/15)
+
+### Added
+- README: badges(librariesio, lgtm) [f36810e](https://github.com/noeldelgado/parse-css-color/commit/f36810ec81da9352e078a2ebe5dcdee4635e8735)
+
 ## [0.2.0] - [#12](https://github.com/noeldelgado/parse-css-color/pull/12) - 2022-03-16
 ### Added
-- Type definitions
+- Type definitions [c0ec124](https://github.com/noeldelgado/parse-css-color/commit/c0ec124f398036f4a03d8ede41fd2d83e3e142c7)
 
 ## [0.1.2] - [#2](https://github.com/noeldelgado/parse-css-color/pull/2) - 2020-05-19
 ### Added
@@ -39,7 +46,8 @@
   - color keywords
   - transparent
 
-[Unreleased]: https://github.com/noeldelgado/parse-css-color/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/noeldelgado/parse-css-color/compare/v0.2.1...HEAD
+[0.2.1]: https://github.com/noeldelgado/parse-css-color/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/noeldelgado/parse-css-color/compare/v0.1.2...v0.2.0
 [0.1.2]: https://github.com/noeldelgado/parse-css-color/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/noeldelgado/parse-css-color/compare/v0.1.0...v0.1.1
