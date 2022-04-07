@@ -1,8 +1,11 @@
 # parse-css-color
-[![npm-image](https://img.shields.io/npm/v/parse-css-color.svg)](https://www.npmjs.com/package/parse-css-color)
-![license-image](https://img.shields.io/npm/l/parse-css-color.svg)
-[![Known Vulnerabilities](https://snyk.io/test/npm/parse-css-color/badge.svg)](https://snyk.io/test/npm/parse-css-color)
+[![NPM Version][npm-image]][npm-url]
 ![](https://img.badgesize.io/noeldelgado/parse-css-color/master/src/index.js.svg?compression=gzip)
+[![License][license-img]][license-url]
+[![Known Vulnerabilities][snyk-img]][snyk-url]
+[![Libraries.io dependency status for latest release][librariesio-img]][librariesio-url]
+[![Total alerts][lgtm-image]][lgtm-url]
+[![Language grade: JavaScript][lgtm-grade-image]][lgtm-grade-url]
 
 Parse a CSS color string.
 
@@ -92,3 +95,16 @@ npm run dev   # watch for changes and rebuild
 
 ## License
 MIT © [Noel Delgado](http://pixelia.me/)
+
+[npm-image]: https://img.shields.io/npm/v/parse-css-color.svg?logo=npm&label=NPM
+[npm-url]: https://www.npmjs.com/package/parse-css-color
+[license-img]: https://img.shields.io/npm/l/parse-css-color
+[license-url]: https://github.com/noeldelgado/parse-css-color/blob/master/LICENSE
+[snyk-img]: https://snyk.io/test/npm/parse-css-color/badge.svg
+[snyk-url]: https://snyk.io/test/npm/parse-css-color
+[librariesio-img]: https://img.shields.io/librariesio/release/npm/parse-css-color.svg?logo=librariesdotio
+[librariesio-url]: https://libraries.io/npm/parse-css-color
+[lgtm-image]: https://img.shields.io/lgtm/alerts/g/noeldelgado/parse-css-color.svg?logo=lgtm&logoWidth=18
+[lgtm-url]: https://lgtm.com/projects/g/noeldelgado/parse-css-color/alerts/
+[lgtm-grade-image]: https://img.shields.io/lgtm/grade/javascript/g/noeldelgado/parse-css-color.svg?logo=lgtm&logoWidth=18
+[lgtm-grade-url]: https://lgtm.com/projects/g/noeldelgado/parse-css-color/context:javascript

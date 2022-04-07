@@ -5,7 +5,7 @@ declare module "parse-css-color" {
     readonly alpha: number
     readonly type: string
     readonly values: number[]
-  } | null
+  }
 
-  function parseCSSColor(str: string): Result
+  function parseCSSColor(str: string): Result | null
 }
