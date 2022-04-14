@@ -13,6 +13,7 @@
     "dev": "rollup -c -w",
     "test": "mocha --require esm",
     "build": "rollup -c",
+    "coverage": "nyc npm run test && nyc report --reporter=lcov",
     "prepublish": "npm run build"
   },
   "keywords": [
