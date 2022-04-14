@@ -2,6 +2,7 @@
 [![NPM Version][npm-image]][npm-url]
 ![](https://img.badgesize.io/noeldelgado/parse-css-color/master/src/index.js.svg?compression=gzip)
 [![License][license-img]][license-url]
+[![codecov][codecov-image]][codecov-url]
 [![Known Vulnerabilities][snyk-img]][snyk-url]
 [![Libraries.io dependency status for latest release][librariesio-img]][librariesio-url]
 [![Total alerts][lgtm-image]][lgtm-url]
@@ -100,6 +101,8 @@ MIT © [Noel Delgado](http://pixelia.me/)
 [npm-url]: https://www.npmjs.com/package/parse-css-color
 [license-img]: https://img.shields.io/npm/l/parse-css-color
 [license-url]: https://github.com/noeldelgado/parse-css-color/blob/master/LICENSE
+[codecov-image]: https://codecov.io/gh/noeldelgado/parse-css-color/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/noeldelgado/parse-css-color
 [snyk-img]: https://snyk.io/test/npm/parse-css-color/badge.svg
 [snyk-url]: https://snyk.io/test/npm/parse-css-color
 [librariesio-img]: https://img.shields.io/librariesio/release/npm/parse-css-color.svg?logo=librariesdotio
