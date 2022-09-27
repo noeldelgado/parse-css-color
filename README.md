@@ -7,6 +7,7 @@
 [![Libraries.io dependency status for latest release][librariesio-img]][librariesio-url]
 [![Total alerts][lgtm-image]][lgtm-url]
 [![Language grade: JavaScript][lgtm-grade-image]][lgtm-grade-url]
+[![kandi X-Ray](https://kandi.openweaver.com/badges/xray.svg)](https://kandi.openweaver.com/javascript/noeldelgado/parse-css-color)
 
 Parse a CSS color string.
 
