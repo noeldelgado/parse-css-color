@@ -1,5 +1,5 @@
 declare module "parse-css-color" {
-  export = parseCSSColor
+  export default parseCSSColor
 
   export interface Result {
     readonly alpha: number
